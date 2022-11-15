@@ -1,0 +1,40 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "workbench.settings.useSplitJSON": true,
+    //"files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.renderWhitespace": "all",
+    "html.hover.documentation": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "prettier.useTabs": true,
+    "prettier.printWidth": 120,
+
+    "editor.hover.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    //
+    //"editor.fontSize": 30,
+    //"window.zoomLevel": -2,
+    //"editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right"
+}
+
+
+
+
