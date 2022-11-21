@@ -4,26 +4,113 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Sim Racing Iniciacion</title>
+		<style>
+			body {
+				background-color: #013b46;
+			}
+
+			section {
+				margin: 20px;
+				padding: 20px;
+				background-color: #7c7777;
+			}
+			.bordeRedondo {
+				border-radius: 5px;
+			}
+		</style>
 		<link rel="stylesheet" href="./css/navbar.css" />
 	</head>
 	<body>
 		<nav>
 			<ul>
-				<li><a class="active" href="#home">Home</a></li>
-				<li><a href="#news">News</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li style="background-color: red" class="dropdown">
-					<a>Dropdown</a>
+				<li><a class="active" href="./index.html">Home</a></li>
+				<li><a href="./index.html#news">Noticias Relacionadas </a></li>
+				<li><a href="./menu.html">Consultas</a></li>
+				<li style="background-color: rgb(102, 27, 27)" class="dropdown">
+					<a>Fanatech Hardware </a>
 					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
+						<a href="https://fanatec.com/eu-en/racing-wheels-wheel-bases/wheel-bases/podium-wheel-base-dd2">base </a>
+						<a href="https://fanatec.com/eu-en/steering-wheels/clubsport-steering-wheel-320-alcantara">wheel </a>
+						<a href="https://www.logitechg.com/es-es/products/driving/pro-racing-pedals.941-000187.html">Pedal Set</a>
+						<a href="https://fanatec.com/eu-en/shifters-others/clubsport-shifter-sq-v-1.5">Adittional shifter</a>
 					</div>
 				</li>
-				<li style="float: right"><a href="#about">About</a></li>
+				<li style="float: right"><a href="#About">About</a></li>
 				<li style="float: right"><a href="#sign">Signin</a></li>
 			</ul>
 		</nav>
+		<section>
+			<img src="./Doc/img/TegiwaImports_SimRacing_Header.webp" alt="sim racing" width="100%" height="100%" />
+		</section>
+		<section>
+			<form>
+				<div style="text-align: center"></div>
+				<div class="nativeDatePicker">
+					<label for="bday">Fecha De Nacimiento:</label>
+					<input type="date" id="bday" name="bday" />
+					<span class="validity"></span>
+				</div>
+				<div class="fallbackDatePicker"></div>
+			</form>
+			<div style="text-align: center">
+				<form action="contact.php" method="post">
+					<div class="elem-group">
+						<label for="name">Nombre</label>
+						<div style="text-align: center"></div>
+						<input
+							type="text"
+							id="name"
+							name="visitor_name"
+							placeholder="Nombre de ejemplo"
+							pattern="[A-Z\sa-z]{3,20}"
+							required
+						/>
+					</div>
+					<div class="elem-group">
+						<label for="email">Correo electrónico</label>
+						<div style="text-align: center"></div>
+						<input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required />
+					</div>
+					<div class="elem-group">
+						<label for="department-selection">Área a contactar</label>
+						<div style="text-align: center"></div>
+						<select id="department-selection" name="concerned_department" required>
+							<option value="">Selecciona un área</option>
+							<div style="text-align: center"></div>
+							<option value="billing">Configuraciones</option>
+							<div style="text-align: center"></div>
+							<option value="marketing">Soporte</option>
+							<option value="technical support">Servicio al cliente</option>
+							<div style="text-align: center"></div>
+						</select>
+					</div>
+					<div class="elem-group">
+						<label for="title">Motivo de contacto</label>
+						<div style="text-align: center"></div>
+						<input
+							type="text"
+							id="title"
+							name="email_title"
+							required
+							placeholder="Problema/Consulta"
+							pattern="[A-Za-z0-9\s]{8,60}"
+						/>
+					</div>
+					<div class="elem-group">
+						<label for="message">Solicitud</label>
+						<div style="text-align: center"></div>
+						<textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea>
+					</div>
+					<button type="submit">Enviar mensaje</button>
+				</form>
+			</div>
+			<section class="bordeRedondo">
+				<div style="text-align: center">
+					© 2022 MK Incorporated. all Trademarks belong to their respective owners. All rights reserved. Fanatec is a
+					brand of ® Endor AG
+				</div>
+			</section>
+		</section>
 	</body>
 </html>
